@@ -11,7 +11,11 @@ IObservable<long> ticks = Observable.Timer(
     dueTime: TimeSpan.Zero,
     period: TimeSpan.FromSeconds(1));
 
-ticks.Subscribe(observer);
+IObservable<long> threeTicks = Observable.Timer(TimeSpan.FromSeconds(1))
+    .Concat(Observable.Timer(TimeSpan.FromSeconds(1))).Concat(Observable.Timer(TimeSpan.FromSeconds(1)));
+
+threeTicks.Subscribe(observer);
+
 
 ticks.Subscribe(
     value => Console.WriteLine($"Inline - Received value {value}"),
