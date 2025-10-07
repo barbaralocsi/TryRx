@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWriter", "ConsoleWri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rules", "Rules\Rules.csproj", "{1C25757A-66B4-4772-9EC8-D7E5EE2BF07B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicImplementation", "BasicImplementation\BasicImplementation.csproj", "{4EE6950B-7A2B-4ADD-A946-AE63A7326B58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1C25757A-66B4-4772-9EC8-D7E5EE2BF07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C25757A-66B4-4772-9EC8-D7E5EE2BF07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C25757A-66B4-4772-9EC8-D7E5EE2BF07B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE6950B-7A2B-4ADD-A946-AE63A7326B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE6950B-7A2B-4ADD-A946-AE63A7326B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE6950B-7A2B-4ADD-A946-AE63A7326B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE6950B-7A2B-4ADD-A946-AE63A7326B58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
