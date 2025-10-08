@@ -6,7 +6,7 @@ using FileSystemExample;
 
 Console.WriteLine("Hello, World!");
 
-var fs = new RxFsEvents("C:\\Barbi\\TryRx\\FileSystemExample\\test");
+var fs = new RxFsEvents("C:\\Barbi\\TryRx\\src\\05_FileSystemExample\\test");
 
 IObservable<FileSystemEventArgs> configChanges =
     fs.Where(e => Path.GetExtension(e.Name) == ".config");
