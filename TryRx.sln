@@ -1,17 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryRx", "src\TryRx\TryRx.csproj", "{E77F6ED0-9FE7-46E8-9D11-7F616C8FE0A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_TryRx", "src\TryRx\01_TryRx.csproj", "{E77F6ED0-9FE7-46E8-9D11-7F616C8FE0A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWriter", "ConsoleWriter\ConsoleWriter.csproj", "{B2C5C297-1927-4E40-9468-122138790446}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_ConsoleWriter", "ConsoleWriter\02_ConsoleWriter.csproj", "{B2C5C297-1927-4E40-9468-122138790446}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rules", "Rules\Rules.csproj", "{1C25757A-66B4-4772-9EC8-D7E5EE2BF07B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Rules", "Rules\03_Rules.csproj", "{1C25757A-66B4-4772-9EC8-D7E5EE2BF07B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicImplementation", "BasicImplementation\BasicImplementation.csproj", "{4EE6950B-7A2B-4ADD-A946-AE63A7326B58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_BasicImplementation", "BasicImplementation\04_BasicImplementation.csproj", "{4EE6950B-7A2B-4ADD-A946-AE63A7326B58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemExample", "FileSystemExample\FileSystemExample.csproj", "{A6320285-F81D-49BE-A7BE-ABC19F05223A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_FileSystemExample", "FileSystemExample\05_FileSystemExample.csproj", "{A6320285-F81D-49BE-A7BE-ABC19F05223A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{01B2698E-9704-4213-BAB6-E3532BE2DDB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +44,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E77F6ED0-9FE7-46E8-9D11-7F616C8FE0A7} = {01B2698E-9704-4213-BAB6-E3532BE2DDB3}
+		{B2C5C297-1927-4E40-9468-122138790446} = {01B2698E-9704-4213-BAB6-E3532BE2DDB3}
+		{1C25757A-66B4-4772-9EC8-D7E5EE2BF07B} = {01B2698E-9704-4213-BAB6-E3532BE2DDB3}
+		{4EE6950B-7A2B-4ADD-A946-AE63A7326B58} = {01B2698E-9704-4213-BAB6-E3532BE2DDB3}
+		{A6320285-F81D-49BE-A7BE-ABC19F05223A} = {01B2698E-9704-4213-BAB6-E3532BE2DDB3}
 	EndGlobalSection
 EndGlobal

@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ConsoleWriter\ConsoleWriter.csproj" />
+      <ProjectReference Include="..\ConsoleWriter\02_ConsoleWriter.csproj" />
     </ItemGroup>
 
 </Project>
