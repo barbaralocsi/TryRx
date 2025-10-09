@@ -4,7 +4,9 @@ using System.Reactive.Linq;
 using Microsoft.Extensions.Hosting;
 
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
 IHost host = builder.Build();
+host.Start();
 
 Console.WriteLine("Hello, World!");
 
@@ -34,4 +36,4 @@ var subscribeDisposable = keyPresses.Subscribe(
 await Task.Delay(5000);
 subscribeDisposable.Dispose();
 
-host.Run();
+host.WaitForShutdown();
