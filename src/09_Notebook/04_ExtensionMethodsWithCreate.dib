@@ -1,0 +1,82 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"name":"csharp"},{"name":"fsharp","languageName":"F#","aliases":["f#","fs"]},{"name":"html","languageName":"HTML"},{"name":"http","languageName":"HTTP"},{"name":"javascript","languageName":"JavaScript","aliases":["js"]},{"name":"mermaid","languageName":"Mermaid"},{"name":"pwsh","languageName":"PowerShell","aliases":["powershell"]},{"name":"value"}]}}
+
+#!csharp
+
+using System.Reactive;
+using System.Reactive.Linq;
+using System.Reactive.Disposables;
+
+// Empty, Return, Never and Throw
+
+IObservable<T> CustomEmpty<T>()
+{
+    return Observable.Create<T>(observer =>
+    {
+        observer.OnCompleted();
+        return Disposable.Empty;
+    });
+}
+
+var empty = CustomEmpty<int>();
+
+var subscriptionDisposable = empty.Subscribe(
+    x=> Console.WriteLine($"OnNext called: {x}"),
+    x=> Console.WriteLine($"OnError called: {x}"),
+    () => Console.WriteLine($"OnCompleted called")
+);
+
+#!csharp
+
+IObservable<T> CustomReturn<T>(T value)
+{
+    return Observable.Create<T>(observer =>
+    {
+        observer.OnNext(value);
+        observer.OnCompleted();
+        return Disposable.Empty;
+    });
+}
+
+var ret = CustomReturn<int>(5);
+
+var subscriptionDisposable = ret.Subscribe(
+    x=> Console.WriteLine($"OnNext called: {x}"),
+    x=> Console.WriteLine($"OnError called: {x}"),
+    () => Console.WriteLine($"OnCompleted called")
+);
+
+#!csharp
+
+IObservable<T> CustomNever<T>(){
+    return Observable.Create<T>(observer =>{
+        return Disposable.Empty;
+    });
+}
+
+var never = CustomNever<int>();
+
+var subscriptionDisposable = never.Subscribe(
+    x=> Console.WriteLine($"OnNext called: {x}"),
+    x=> Console.WriteLine($"OnError called: {x}"),
+    () => Console.WriteLine($"OnCompleted called")
+);
+
+#!csharp
+
+IObservable<T> CustomThrow<T>(Exception ex)
+{
+    return Observable.Create<T>(observer =>{
+        observer.OnError(ex);
+        return Disposable.Empty;
+    });
+}
+
+var t = Observable.Throw<Exception>(new Exception("Very bad 2!"));
+
+var subscriptionDisposable = t.Subscribe(
+    x=> Console.WriteLine($"OnNext called: {x}"),
+    x=> Console.WriteLine($"OnError called: {x}"),
+    () => Console.WriteLine($"OnCompleted called")
+);
