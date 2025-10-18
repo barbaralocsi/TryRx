@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_Deferal", "src\11_Defera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_SequenceGenerators", "src\12_SequenceGenerators\12_SequenceGenerators.csproj", "{E504D8BD-84D2-480A-B824-CC34F5E9B3C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_TimedSequenceGenerators", "src\13_TimedSequenceGenerators\13_TimedSequenceGenerators.csproj", "{739E3BF5-E65D-4EC9-ADD9-D26B02E8BB8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_MoreComplexGenerate", "src\14_MoreComplexGenerate\14_MoreComplexGenerate.csproj", "{924805F3-BED4-4167-8029-4E5101D69730}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +81,14 @@ Global
 		{E504D8BD-84D2-480A-B824-CC34F5E9B3C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E504D8BD-84D2-480A-B824-CC34F5E9B3C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E504D8BD-84D2-480A-B824-CC34F5E9B3C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{739E3BF5-E65D-4EC9-ADD9-D26B02E8BB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739E3BF5-E65D-4EC9-ADD9-D26B02E8BB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739E3BF5-E65D-4EC9-ADD9-D26B02E8BB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739E3BF5-E65D-4EC9-ADD9-D26B02E8BB8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{924805F3-BED4-4167-8029-4E5101D69730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{924805F3-BED4-4167-8029-4E5101D69730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{924805F3-BED4-4167-8029-4E5101D69730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{924805F3-BED4-4167-8029-4E5101D69730}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,5 +105,7 @@ Global
 		{03979BD8-977B-43D6-8102-785D43354E63} = {01B2698E-9704-4213-BAB6-E3532BE2DDB3}
 		{A5CC1D22-6595-4CFB-808B-7C778F85BC6D} = {01B2698E-9704-4213-BAB6-E3532BE2DDB3}
 		{E504D8BD-84D2-480A-B824-CC34F5E9B3C6} = {01B2698E-9704-4213-BAB6-E3532BE2DDB3}
+		{739E3BF5-E65D-4EC9-ADD9-D26B02E8BB8D} = {01B2698E-9704-4213-BAB6-E3532BE2DDB3}
+		{924805F3-BED4-4167-8029-4E5101D69730} = {01B2698E-9704-4213-BAB6-E3532BE2DDB3}
 	EndGlobalSection
 EndGlobal
