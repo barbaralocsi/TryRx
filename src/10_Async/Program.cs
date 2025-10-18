@@ -17,7 +17,7 @@ async Task DoSomeWorkAsync(long number)
     Console.WriteLine($"DoSomeWorkAsync END '{number}'");
 }
 
-#if false
+#if true
 public static class MyObservableExtensions
 {
     public static IDisposable SubscribeAsync<T>(this IObservable<T> source, Func<T, Task> onNextAsync) =>
