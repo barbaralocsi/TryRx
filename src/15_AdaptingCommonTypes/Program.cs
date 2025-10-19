@@ -6,6 +6,7 @@ Console.WriteLine("Hello, World!");
 
 //FromDelegates.Example();
 //FromEvents.Example();
-FromTask.Example();
+//FromTask.Example();
+FromEnumerable.Example();
 
 Console.ReadLine();
