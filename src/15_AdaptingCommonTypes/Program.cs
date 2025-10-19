@@ -5,7 +5,7 @@ using _15_AdaptingCommonTypes;
 Console.WriteLine("Hello, World!");
 
 //FromDelegates.Example();
-
-FromEvents.Example();
+//FromEvents.Example();
+FromTask.Example();
 
 Console.ReadLine();
